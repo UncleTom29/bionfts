@@ -1,6 +1,7 @@
 import React from 'react';
 import { Wallet, LayoutDashboard, Coins, Store, LifeBuoy } from 'lucide-react';
 import { Dna } from 'lucide-react';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const BioNFTsLogo = () => {
   return (
@@ -57,7 +58,8 @@ const DappNavbar = ({ onPageChange, currentPage }: DappNavbarProps) => {
           </div>
           
           <div className="flex items-center">
-            <button
+          <ConnectButton />
+            {/* <button
               onClick={() => setIsConnected(!isConnected)}
               className={`flex items-center px-4 py-2 rounded-full text-sm font-medium ${
                 isConnected
@@ -67,7 +69,7 @@ const DappNavbar = ({ onPageChange, currentPage }: DappNavbarProps) => {
             >
               <Wallet size={20} className="mr-2" />
               {isConnected ? '0x1234...5678' : 'Connect Wallet'}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
